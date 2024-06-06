@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: greenyellow;
+  }
+  
+  .container {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+  }
+
+  .cell:hover {
+    background-color: gray;
+    box-shadow: 4px 4px 8px black;
+    color: white;
+  }
+
+  
+  button {
+    margin: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  
+  button:hover {
+    box-shadow: 4px 4px 8px black;
+    background-color: black;
+    color: white;
+  }
+  
+  button:active {
+    background-color: grey;
+    color: white;
+  }
+
+
+
+  @media (max-width: 480px) {
+    .cell {
+      width: 80px;
+      height: 80px;
+      font-size: 36px;
+    }
+  }
